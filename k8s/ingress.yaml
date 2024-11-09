@@ -8,7 +8,7 @@ metadata:
 spec:
   tls:
     - hosts:
-      - api.calindari.com
+        - api.calindari.com
       secretName: node-app-tls
   rules:
     - host: api.calindari.com
