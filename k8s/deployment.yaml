@@ -13,12 +13,12 @@ spec:
         app: node-app
     spec:
       containers:
-      - name: node-app
-        image: registry.digitalocean.com/digitaloceanregistry/node-app:latest
-        ports:
-          - containerPort: 8080
-        envFrom:
-          - secretRef:
-              name: app-secrets
+        - name: node-app
+          image: registry.digitalocean.com/bolio-digitalocean-registry/node-app:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: app-secrets
       imagePullSecrets:
-        - name: registry-digitaloceanregistry
+        - name: registry-bolio-digitalocean-registry
